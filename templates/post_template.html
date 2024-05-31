@@ -1,4 +1,4 @@
-{% include 'header.html' with context %}
+{% include 'snippets/header.html' %}
 <h1>{{ metadata.title }}</h1>
 <p>{{ metadata.date }}</p>
 <p>Category: <a href="{{ base_url }}categories/{{ metadata.category }}.html">{{ metadata.category }}</a></p>
@@ -6,4 +6,4 @@
     {{ content | safe }}
 </div>
 <a href="{{ base_url }}index.html">Back to Home</a>
-{% include 'footer.html' with context %}
+{% include 'snippets/footer.html' %}

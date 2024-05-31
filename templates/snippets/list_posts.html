@@ -1,0 +1,7 @@
+<ul>
+  {% for post in posts %}
+  <article>
+    <a href="{{ base_url }}{{ post.filename }}">{{ post.title }}</a> - {{ post.date }}
+  </article>
+  {% endfor %}
+</ul>

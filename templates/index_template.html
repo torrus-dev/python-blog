@@ -1,18 +1,18 @@
-{% include 'header.html' with context %}
-<h1>Blog Posts</h1>
-<ul>
-    {% for post in posts %}
-    <li>
-        <a href="{{ base_url }}{{ post.filename }}">{{ post.title }}</a> - {{ post.date }} - <a href="{{ base_url }}categories/{{ post.category }}.html">{{ post.category }}</a>
-    </li>
-    {% endfor %}
-</ul>
+{% include 'snippets/header.html' %}
+<header>
+  <h1>Ultimas publicaciones</h1>
+  <div>Descubre las ultimas publicaciones</div>
+</header>
+
+<div>
+  {% include 'snippets/list_posts.html' %}
+</div>
 <h2>Categories</h2>
 <ul>
-    {% for category in categories %}
-    <li>
-        <a href="{{ base_url }}categories/{{ category }}.html">{{ category }}</a>
-    </li>
-    {% endfor %}
+  {% for category in categories %}
+  <li>
+    <a href="{{ base_url }}categories/{{ category }}.html">{{ category }}</a>
+  </li>
+  {% endfor %}
 </ul>
-{% include 'footer.html' with context %}
+{% include 'snippets/footer.html' %}
