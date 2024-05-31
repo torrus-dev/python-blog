@@ -24,6 +24,8 @@ jobs:
         pip install -r requirements.txt
 
     - name: Generate Blog
+      env:
+        BASE_URL: "/python-blog/"  # Ajusta BASE_URL al nombre del repositorio
       run: python generate_blog.py
 
     - name: Deploy to GitHub Pages
