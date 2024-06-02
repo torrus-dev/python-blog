@@ -20,12 +20,26 @@
 
 .nav-wrapper {
   /* border: 1px solid lightblue; */
-  border-bottom: 1px solid var(--pico-secondary);
+  border-bottom: 1px solid var(--pico-muted-border-color);
   margin-bottom: 2em;
   position: sticky;
   top: 0;
+  background-color: var(--pico-background-color);
 }
 
 nav {
-  padding: 1.5em 0;
+  padding: .5em 0;
+}
+
+a.nav-title {
+  color: inherit;
+  text-decoration-color: inherit;
+}
+
+ul, ol {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
 }

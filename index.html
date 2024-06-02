@@ -6,27 +6,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
-  <link rel="stylesheet" href="/python-blog/assets/css/pico.cyan.min.css">
+  <link rel="stylesheet" href="/python-blog/assets/css/pico.pumpkin.min.css">
   <link rel="stylesheet" href="/python-blog/assets/css/app.css">
 </head>
 
 <body>
-  <!-- <nav class="container">
-    <a class="contrast" href="/python-blog/index.html">Proyecto Torrus</a>
-    <div style="float: right;">
-      
-      <a href="/python-blog/categories/tech.html">tech</a>
-      
-    </div>
-  </nav> -->
   
   <div class="nav-wrapper">
     <nav class="container">
-      <ul>
-        <li><strong>Proyecto Torrus</strong></li>
+      <ul class="nav-branding">
+        <li><a 
+          class="nav-title" 
+          href="/python-blog/index.html">
+            <strong>Proyecto Torrus</strong>
+        </a></li>
       </ul>
-      <ul>
+      <ul class="nav-pages">
         <li><a href="/python-blog/about.html">About</a></li>
+        <li>|</li>
         
           <li><a href="/python-blog/categories/tech.html">tech</a></li>
         
@@ -35,13 +32,18 @@
   </div>
 
   <main class="container">
-<header>
-  <h1>Ultimas publicaciones</h1>
-  <div>Descubre las ultimas publicaciones</div>
-</header>
-
 <div>
-  <ul>
+
+  <header>
+    <hgroup>
+      <h1>Ultimas publicaciones</h1>
+      <p>Descubre las ultimas publicaciones</p>
+    </hgroup>
+    
+  </header>
+  
+  <div>
+    <ul>
   
   <article>
     <a href="/python-blog/me-gusta-obsidian.html">ME gusta obsidian</a> - 2024-05-29
@@ -52,12 +54,16 @@
   </article>
   
 </ul>
+  </div>
 </div>
+
 <h2>Categories</h2>
 <ul>
   
   <li>
-    <a href="/python-blog/categories/tech.html">tech</a>
+    <a class="button" href="/python-blog/categories/tech.html">
+    <button>tech</button>  
+    </a>
   </li>
   
 </ul>
