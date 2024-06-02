@@ -1,17 +1,26 @@
 {% include 'snippets/header.html' %}
-<header>
-  <h1>Ultimas publicaciones</h1>
-  <div>Descubre las ultimas publicaciones</div>
-</header>
-
 <div>
-  {% include 'snippets/list_posts.html' %}
+
+  <header>
+    <hgroup>
+      <h1>Ultimas publicaciones</h1>
+      <p>Descubre las ultimas publicaciones</p>
+    </hgroup>
+    
+  </header>
+  
+  <div>
+    {% include 'snippets/list_posts.html' %}
+  </div>
 </div>
+
 <h2>Categories</h2>
 <ul>
   {% for category in categories %}
   <li>
-    <a href="{{ base_url }}categories/{{ category }}.html">{{ category }}</a>
+    <a class="button" href="{{ base_url }}categories/{{ category }}.html">
+    <button>{{ category }}</button>  
+    </a>
   </li>
   {% endfor %}
 </ul>
